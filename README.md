@@ -20,25 +20,25 @@ Test: "If given a max that would output a range that includes a '1', it should r
 Code: beepBoop(1)
 Expected Output: [0, "Beep!"]
 
-Test: "If given a max that would output a range that includes a '2', it should replace all 2's with 'Boop!'"
+Test: "If given a max that would output a range that includes a '2', it should replace all 2's with 'Boop'"
 Code: beepBoop(2)
-Expected Output: [0, "Beep!", "Boop!"]
+Expected Output: [0, "Beep!", "Boop"]
 
 Test: "If given a max that would output a range that includes a '3', it should replace all 3's with 'Won't you be my neighbor?'"
 Code: beepBoop(3)
-Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?"]
+Expected Output: [0, "Beep!", "Boop", "Won't you be my neighbor?"]
 
 Test: "If given a max that would output a range that includes a number with the digit '1', it should replace all those numbers with 'Beep!'"
 Code: beepBoop(10);
-Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!"]
+Expected Output: [0, "Beep!", "Boop", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!"]
 
-Test: "If given a max that would output a range that includes a number with the digit '2', it should replace all those numbers with 'Boop!'"
+Test: "If given a max that would output a range that includes a number with the digit '2', it should replace all those numbers with 'Boop'"
 Code: beepBoop(12);
-Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Boop!"]
+Expected Output: [0, "Beep!", "Boop", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Boop"]
 
 Test: "If given a max that would output a range that includes a number with the digit '3', it should replace all those numbers with 'Won't you be my neighbor?'"
 Code: beepBoop(12);
-Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Boop!", "Won't you be my neighbor?"]
+Expected Output: [0, "Beep!", "Boop", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Boop", "Won't you be my neighbor?"]
 
 
 
