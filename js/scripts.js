@@ -37,7 +37,7 @@ function includesDigit(num, digit) {
 }
 
 $(document).ready(function() {
-  $("form").submit(function(e) {
+  $("#count-form").submit(function(e) {
     e.preventDefault();
 
     const number = $("#number").val();
