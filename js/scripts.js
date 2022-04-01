@@ -12,7 +12,7 @@ function beepBoop(max) {
     if (includesDigit(number, 1)) {
       return "Beep!";
     } else if(includesDigit(number, 2)) {
-      return "Boop!";
+      return "Boop";
     } else if(includesDigit(number, 3)) {
       return "Won\'t you be my neighbor?";
     } else {
