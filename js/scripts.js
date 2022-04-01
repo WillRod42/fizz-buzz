@@ -12,5 +12,10 @@ function getRange(max) {
 }
 
 function beepBoop(max) {
-  return getRange(max);
+  let range = getRange(max);
+  if (range.includes(1)) {
+    range[range.indexOf(1)] = "Beep!";
+  }
+
+  return range;
 }
