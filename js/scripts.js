@@ -13,13 +13,13 @@ function getRange(max) {
   return range;
 }
 
-function beepBoop(max) {
+function beepBoop(max, digits) {
   return getRange(max).map(function(number) {
-    if(includesDigit(number, 3)) {
+    if(includesDigit(number, digits[2])) {
       return "Won\'t you be my neighbor?";
-    } else if(includesDigit(number, 2)) {
+    } else if(includesDigit(number, digits[1])) {
       return "Boop";
-    } else if (includesDigit(number, 1)) {
+    } else if (includesDigit(number, digits[0])) {
       return "Beep!";
     } else {
       return number.toString();
@@ -39,27 +39,14 @@ function includesDigit(num, digit) {
   return false;
 }
 
-function checkForDigits(numbers, digits) {
-  for (let i = 0; i < numbers.length; i++) {
-    let numDigits = getDigits(numbers[i]);
-    for(let j = 0; j < digits.length; j++) {
-      for (let k = 0; k < numDigits.length; k++) {
-        if (numDigits[k] === digits[j]) {
-          return true;
-        }
-      }
-    }
-  }
-
-  return false;
-}
-
 $(document).ready(function() {
   $("#count-form").submit(function(e) {
     e.preventDefault();
 
+    const digits = [parseInt($("#digit-replace-1").val()), parseInt($("#digit-replace-2").val()), parseInt($("#digit-replace-3").val())];
+
     const number = $("#number").val();
-    const counting = beepBoop(number);
+    const counting = beepBoop(number, digits);
 
     const outputList = $("#output ul");
     outputList.html("");
