@@ -37,7 +37,13 @@ function includesDigit(num, digit) {
 }
 
 function checkForDigits(numbers, digits) {
-  return numbers[0] === digits[0];
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] === digits[0]) {
+      return true;
+    }
+  }
+
+  return false;
 }
 
 $(document).ready(function() {

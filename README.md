@@ -71,3 +71,11 @@ Expected Output: true
 Test: "It should return false if a single element array does not contain a given digit"
 Code: checkForDigits([2], [1])
 Expected Output: false
+
+Test: "It should return true if a multi-element array contains a given digit"
+Code: checkForDigits([1, 2, 3], [1])
+Expected Output: true
+
+Test: "It should return false if a multi-element array does not contain a given digit"
+Code: checkForDigits([1, 2, 3], [4])
+Expected Output: false
