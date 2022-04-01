@@ -12,14 +12,12 @@ function beepBoop(max) {
   let modifiedRange = range.map(function(number) {
     if (includesDigit(number, 1)) {
       return "Beep!";
+    } else if(includesDigit(number, 2)) {
+      return "Boop!";
     } else {
       return number.toString();
     }
   });
-
-  if (modifiedRange.includes("2")) {
-    modifiedRange[modifiedRange.indexOf("2")] = "Boop!";
-  }
 
   if (modifiedRange.includes("3")) {
     modifiedRange[modifiedRange.indexOf("3")] = "Won\'t you be my neighbor?";
