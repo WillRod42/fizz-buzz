@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(238, 209, 190);
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  margin-bottom: 1em;
+  background-color: rgb(255, 183, 154);
+}
+
+h5 {
+  margin-top: 0.5em;
+}
+
+button {
+  margin-top: 1em;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.border-group {
+  padding-bottom: 5em;
+  padding-top: 1em;
+}

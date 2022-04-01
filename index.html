@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang='en-US'>
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Roboto:wght@400&display=swap" rel="stylesheet"> 
   <script src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous'></script>
   <script src='js/scripts.js'></script>
   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css' integrity='sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn' crossorigin='anonymous'>
@@ -11,23 +14,24 @@
   <h1 class="display-1 text-center">Mr. Roboger's Neighborhood</h1>
   <div class="row" id="main-content">
     <div class="col-1"></div>
-    <div class="col-5" id="input">
-      <h5>Enter a number for Mr. Roboger to count to:</h5>
-      <form id="count-form">
-        <input type="number" class="form-control" id="number" min="0" value="0">
-        <h5>Choose what digits Mr. Roboger replaces!</h5>
-        <input type="number" id="digit-replace-1" class="form-control" min="0" value="1">
-        <input type="number" id="digit-replace-2" class="form-control" min="0" value="2">
-        <input type="number" id="digit-replace-3" class="form-control" min="0" value="3">
-        <h5>Your Name:</h5>
-        <input type="text" id="name" class="form-control">
-        <button class="btn btn-primary" type="submit">Count</button>
-      </form>
-      <div class="col-1"></div>
-    </div>
-    <div class="col-5" id="output">
-      <h4>Mr. Roboger says:</h4>
-      <ul></ul>
+    <div class="col-10 border-group border border-secondary row">
+      <div class="col-6" id="input">
+        <h5>Enter a number for Mr. Roboger to count to:</h5>
+        <form id="count-form">
+          <input type="number" class="form-control" id="number" min="0" value="0">
+          <h5>Choose what digits Mr. Roboger replaces!</h5>
+          <input type="number" id="digit-replace-1" class="form-control" min="0" value="1">
+          <input type="number" id="digit-replace-2" class="form-control" min="0" value="2">
+          <input type="number" id="digit-replace-3" class="form-control" min="0" value="3">
+          <h5>Your Name:</h5>
+          <input type="text" id="name" class="form-control">
+          <button class="btn btn-primary" type="submit">Count</button>
+        </form>
+      </div>
+      <div class="col-6" id="output">
+        <h5>Mr. Roboger says:</h5>
+        <ul></ul>
+      </div>
     </div>
   </div>
 </body>
