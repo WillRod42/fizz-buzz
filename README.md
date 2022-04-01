@@ -18,4 +18,8 @@ Expected Output: [0]
 
 Test: "If given an max that would output a range that includes a '1', it should replace all 1's with 'Beep!'"
 Code: beepBoop(1)
-Expected Output: ["Beep!]
+Expected Output: ["Beep!"]
+
+Test: "If given an max that would output a range that includes a '2', it should replace all 2's with 'Boop!'"
+Code: beepBoop(1)
+Expected Output: ["Boop!"]

@@ -17,5 +17,9 @@ function beepBoop(max) {
     range[range.indexOf(1)] = "Beep!";
   }
 
+  if (range.includes(2)) {
+    range[range.indexOf(2)] = "Boop!";
+  }
+
   return range;
 }
