@@ -8,22 +8,17 @@ function getRange(max) {
 }
 
 function beepBoop(max) {
-  let range = getRange(max);
-  let modifiedRange = range.map(function(number) {
+  return getRange(max).map(function(number) {
     if (includesDigit(number, 1)) {
       return "Beep!";
     } else if(includesDigit(number, 2)) {
       return "Boop!";
+    } else if(includesDigit(number, 3)) {
+      return "Won\'t you be my neighbor?";
     } else {
       return number.toString();
     }
   });
-
-  if (modifiedRange.includes("3")) {
-    modifiedRange[modifiedRange.indexOf("3")] = "Won\'t you be my neighbor?";
-  }
-
-  return modifiedRange;
 }
 
 function includesDigit(num, digit) {

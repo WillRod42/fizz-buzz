@@ -36,6 +36,10 @@ Test: "If given a max that would output a range that includes a number with the 
 Code: beepBoop(12);
 Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Boop!"]
 
+Test: "If given a max that would output a range that includes a number with the digit '3', it should replace all those numbers with 'Won't you be my neighbor?'"
+Code: beepBoop(12);
+Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Boop!", "Won't you be my neighbor?"]
+
 
 
 Describe: includesDigit()
