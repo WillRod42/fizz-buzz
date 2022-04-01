@@ -21,5 +21,9 @@ function beepBoop(max) {
     range[range.indexOf(2)] = "Boop!";
   }
 
+  if (range.includes(3)) {
+    range[range.indexOf(3)] = "Won\'t you be my neighbor?";
+  }
+
   return range;
 }

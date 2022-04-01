@@ -21,5 +21,9 @@ Code: beepBoop(1)
 Expected Output: ["Beep!"]
 
 Test: "If given an max that would output a range that includes a '2', it should replace all 2's with 'Boop!'"
-Code: beepBoop(1)
+Code: beepBoop(2)
 Expected Output: ["Boop!"]
+
+Test: "If given an max that would output a range that includes a '3', it should replace all 3's with 'Won't you be my neighbor?'"
+Code: beepBoop(3)
+Expected Output: ["Won't you be my neighbor?"]
