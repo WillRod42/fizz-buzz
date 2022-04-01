@@ -14,15 +14,18 @@
     <div class="col-5" id="input">
       <h4>Enter a number for Mr. Roboger to count to:</h4>
       <form id="count-form">
-        <input type="number" class="form-control" id="number" min="0">
-        <button class="btn btn-primary" type="submit" id="count">Count</button>
+        <input type="number" class="form-control" id="number" min="0" value="0">
+        <button class="btn btn-primary" type="submit">Count</button>
       </form>
       <form id="replace-form">
         <h5>Choose what digits Mr. Roboger replaces!</h5>
-        <input type="number" id="digit-replace-1" class="form-control" value="1">
-        <input type="number" id="digit-replace-2" class="form-control" value="2">
-        <input type="number" id="digit-replace-3" class="form-control" value="3">
+        <input type="number" id="digit-replace-1" class="form-control" min="0" value="1">
+        <input type="number" id="digit-replace-2" class="form-control" min="0" value="2">
+        <input type="number" id="digit-replace-3" class="form-control" min="0" value="3">
+        <button class="btn btn-primary" type="submit">Change</button>
       </form>
+      <button class="btn btn-success" id="add">Add</button>
+      <button class="btn btn-danger" id="remove">Remove</button>
       <div class="col-1"></div>
     </div>
     <div class="col-5" id="output">
