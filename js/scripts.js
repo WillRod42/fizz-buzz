@@ -9,19 +9,23 @@ function getRange(max) {
 
 function beepBoop(max) {
   let range = getRange(max);
-  if (range.includes(1)) {
-    range[range.indexOf(1)] = "Beep!";
+  let modifiedRange = range.map(function(number) {
+    if (includesDigit(number, 1)) {
+      return "Beep!";
+    } else {
+      return number.toString();
+    }
+  });
+
+  if (modifiedRange.includes("2")) {
+    modifiedRange[modifiedRange.indexOf("2")] = "Boop!";
   }
 
-  if (range.includes(2)) {
-    range[range.indexOf(2)] = "Boop!";
+  if (modifiedRange.includes("3")) {
+    modifiedRange[modifiedRange.indexOf("3")] = "Won\'t you be my neighbor?";
   }
 
-  if (range.includes(3)) {
-    range[range.indexOf(3)] = "Won\'t you be my neighbor?";
-  }
-
-  return range;
+  return modifiedRange;
 }
 
 function includesDigit(num, digit) {
