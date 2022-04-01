@@ -45,19 +45,19 @@ Expected Output: [0, "Beep!", "Boop", "Won't you be my neighbor?", 4, 5, 6, 7, 8
 Describe: includesDigit()
 
 Test: "Should return false if given single digit number does not include given digit"
-Code: includesDigit(2, 1)
+Code: includesDigit(2, 1);
 Expected Output: false
 
 Test: "Should return true if given single digit number does include given digit"
-Code: includesDigit(1, 1)
+Code: includesDigit(1, 1);
 Expected Output: true
 
 Test: "Should return true if given multiple digit number contains given digit"
-Code: includesDigit(15, 1)
+Code: includesDigit(15, 1);
 Expected Output: true
 
 Test: "Should return false if given multiple digit number that does not contain given digit"
-Code: includesDigit(15, 3)
+Code: includesDigit(15, 3);
 Expected Output: false
 
 
@@ -65,17 +65,33 @@ Expected Output: false
 Describe checkForDigits()
 
 Test: "It should return true if a single element array contains a given digit"
-Code: checkForDigits([1], [1])
+Code: checkForDigits([1], [1]);
 Expected Output: true
 
 Test: "It should return false if a single element array does not contain a given digit"
-Code: checkForDigits([2], [1])
+Code: checkForDigits([2], [1]);
 Expected Output: false
 
 Test: "It should return true if a multi-element array contains a given digit"
-Code: checkForDigits([1, 2, 3], [1])
+Code: checkForDigits([1, 2, 3], [1]);
 Expected Output: true
 
 Test: "It should return false if a multi-element array does not contain a given digit"
-Code: checkForDigits([1, 2, 3], [4])
+Code: checkForDigits([1, 2, 3], [4]);
+Expected Output: false
+
+Test: "It should return true if a multi-element array contains any given digit"
+Code: checkForDigits([3, 4, 1], [1, 2]);
+Expected Output: true
+
+Test: "It should return false if a multi-element array does not contain any given digit"
+Code: checkForDigits([1, 2, 3], [4, 5]);
+Expected Output: false
+
+Test: "It should return true if any array element contains any given digit"
+Code: checkForDigits([12, 45], [1, 2]);
+Expected Output: true
+
+Test: "It should return true if every array element does not contain any given digit"
+Code: checkForDigits([44, 45], [1, 2]);
 Expected Output: false

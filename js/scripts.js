@@ -1,3 +1,9 @@
+function getDigits(number) {
+  return number.toString().split("").map(function(digit) {
+    return parseInt(digit);
+  });
+}
+
 function getRange(max) {
   let range = [];
   for (let i = 0; i <= max; i++) {
@@ -22,13 +28,10 @@ function beepBoop(max) {
 }
 
 function includesDigit(num, digit) {
-  let numbers = num.toString().split("");
-  numbers = numbers.map(function(number) {
-    return parseInt(number);
-  });
+  let numDigits = getDigits(num);
 
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] === digit) {
+  for (let i = 0; i < numDigits.length; i++) {
+    if (numDigits[i] === digit) {
       return true;
     }
   }
@@ -38,8 +41,13 @@ function includesDigit(num, digit) {
 
 function checkForDigits(numbers, digits) {
   for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] === digits[0]) {
-      return true;
+    let numDigits = getDigits(numbers[i]);
+    for(let j = 0; j < digits.length; j++) {
+      for (let k = 0; k < numDigits.length; k++) {
+        if (numDigits[k] === digits[j]) {
+          return true;
+        }
+      }
     }
   }
 
