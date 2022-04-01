@@ -36,6 +36,10 @@ function includesDigit(num, digit) {
   return false;
 }
 
+function checkForDigits(numbers, digits) {
+  return numbers[0] === digits[0];
+}
+
 $(document).ready(function() {
   $("#count-form").submit(function(e) {
     e.preventDefault();

@@ -59,3 +59,11 @@ Expected Output: true
 Test: "Should return false if given multiple digit number that does not contain given digit"
 Code: includesDigit(15, 3)
 Expected Output: false
+
+
+
+Describe checkForDigits()
+
+Test: "It should return true if a single element array contains a given digit"
+Code: checkForDigits([1], [1])
+Expected Output: true
