@@ -38,3 +38,7 @@ Expected Output: false
 Test: "Should return true if given single digit number does include given digit"
 Code: includesDigit(1, 1)
 Expected Output: true
+
+Test: "Should return true if given multiple digit number contains given digit"
+Code: includesDigit(15, 1)
+Expected Output: true

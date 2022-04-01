@@ -25,5 +25,16 @@ function beepBoop(max) {
 }
 
 function includesDigit(num, digit) {
-  return num === digit;
+  let numbers = num.toString().split("");
+  numbers = numbers.map(function(number) {
+    return parseInt(number);
+  });
+
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] === digit) {
+      return true;
+    }
+  }
+
+  return false;
 }
