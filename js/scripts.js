@@ -9,12 +9,12 @@ function getRange(max) {
 
 function beepBoop(max) {
   return getRange(max).map(function(number) {
-    if (includesDigit(number, 1)) {
-      return "Beep!";
+    if(includesDigit(number, 3)) {
+      return "Won\'t you be my neighbor?";
     } else if(includesDigit(number, 2)) {
       return "Boop";
-    } else if(includesDigit(number, 3)) {
-      return "Won\'t you be my neighbor?";
+    } else if (includesDigit(number, 1)) {
+      return "Beep!";
     } else {
       return number.toString();
     }
