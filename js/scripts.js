@@ -23,3 +23,7 @@ function beepBoop(max) {
 
   return range;
 }
+
+function includesDigit(num, digit) {
+  return num === digit;
+}
