@@ -42,3 +42,7 @@ Expected Output: true
 Test: "Should return true if given multiple digit number contains given digit"
 Code: includesDigit(15, 1)
 Expected Output: true
+
+Test: "Should return false if given multiple digit number that does not contain given digit"
+Code: includesDigit(15, 3)
+Expected Output: false
