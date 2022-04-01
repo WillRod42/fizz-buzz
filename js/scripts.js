@@ -35,3 +35,18 @@ function includesDigit(num, digit) {
 
   return false;
 }
+
+$(document).ready(function() {
+  $("form").submit(function(e) {
+    e.preventDefault();
+
+    const number = $("#number").val();
+    const counting = beepBoop(number);
+
+    const outputList = $("#output ul");
+    outputList.html("");
+    counting.forEach(function(number) {
+      outputList.append("<li>" + number + "</li>");
+    });
+  });
+});
