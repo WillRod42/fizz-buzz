@@ -10,3 +10,7 @@ function getRange(max) {
 
   return range;
 }
+
+function beepBoop(max) {
+  return getRange(max);
+}
