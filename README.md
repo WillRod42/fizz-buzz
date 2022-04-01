@@ -67,3 +67,7 @@ Describe checkForDigits()
 Test: "It should return true if a single element array contains a given digit"
 Code: checkForDigits([1], [1])
 Expected Output: true
+
+Test: "It should return false if a single element array does not contain a given digit"
+Code: checkForDigits([2], [1])
+Expected Output: false
